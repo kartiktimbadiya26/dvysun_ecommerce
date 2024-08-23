@@ -1,20 +1,13 @@
 {
+      "version": 2,
+      "name": "your-project-name",
+      "build": {
+            "command": "npm run build"
+      },
       "routes": [
             {
-                  "src": "/ajax/(.*)",
-                  "dest": "/public/ajax/$1"
-            },
-            {
-                  "src": "/assets/(.*)",
-                  "dest": "/public/assets/$1"
-            },
-            {
-                  "src": "/npm/(.*)",
-                  "dest": "/public/npm/$1"
-            },
-            {
                   "src": "/(.*)",
-                  "dest": "/api/index.php"
+                  "dest": "/index.html"
             }
       ]
 }
